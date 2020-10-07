@@ -338,6 +338,7 @@ class BlocksGroup(pygame.sprite.OrderedUpdates):
         else:
             self.update_grid()
     
+    #BLOQUE QUE DEBE MODIFICARSE PARA MOVERLO A TRAVES DE IMAGEN
     def move_current_block(self):
         # First check if there's something to move.
         if self._current_block_movement_heading is None:
