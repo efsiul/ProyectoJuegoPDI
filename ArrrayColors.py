@@ -6,14 +6,13 @@ from numpy.core.numeric import count_nonzero                                    
 
 
 
-
     
     
 def yellow():
-    lC1 =    np.array([15, 100, 0], np.uint8)                                                                #Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
+    lC1 =    np.array([25, 50, 0], np.uint8)                                                                #Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
     hC1 =    np.array([30, 255, 255], np.uint8)                                                             #Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo  
-    lC2 =    np.array([31, 100, 0], np.uint8)                                                                #Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
-    hC2 =    np.array([45, 255, 255], np.uint8)                                                             #Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
+    lC2 =    np.array([31, 50, 0], np.uint8)                                                                #Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
+    hC2 =    np.array([35, 255, 255], np.uint8)                                                             #Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
     yellow=  {"lC1":lC1, "hC1":hC1, "lC2":lC2,"hC2": hC2, "color":"yellow"}    
     return yellow
         
@@ -34,9 +33,9 @@ def red():
     return red       
     
 def green():
-    lC1 =    np.array([50, 0, 0], np.uint8)                                                                #Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
-    hC1 =    np.array([57, 255, 255], np.uint8)                                                             #Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo  
-    lC2 =    np.array([58, 0, 0], np.uint8)                                                                #Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
-    hC2 =    np.array([65, 255, 255], np.uint8)                                                             #Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
+    lC1 =    np.array([55, 0, 0], np.uint8)                                                                #Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
+    hC1 =    np.array([62, 255, 255], np.uint8)                                                             #Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo  
+    lC2 =    np.array([63, 0, 0], np.uint8)                                                                #Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
+    hC2 =    np.array([70, 255, 255], np.uint8)                                                             #Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
     green=     {"lC1":lC1, "hC1":hC1, "lC2":lC2,"hC2": hC2, "color":"green"}    
     return green 
