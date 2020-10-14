@@ -5,12 +5,12 @@
     The classic Tetris developed using PyGame.
     Copyright (C) 2018 Recursos Python - recursospython.com.
 """
-
+import sys, pygame, random, os.path, time
+import threading
 from collections import OrderedDict
 import random
-from ColorCapture import ColorCapture
+import subprocess
 from pygame import Rect
-import pygame
 import numpy as np
 
 
@@ -100,7 +100,7 @@ class Block(pygame.sprite.Sprite):
                         self.image,
                         self.color,
                         Rect(x*TILE_SIZE + 1, y*TILE_SIZE + 1,
-                             TILE_SIZE - 2, TILE_SIZE - 2)
+                            TILE_SIZE - 2, TILE_SIZE - 2)
                     )
         self._create_mask()
     
@@ -395,16 +395,23 @@ def draw_grid(background):
 def draw_centered_surface(screen, surface, y):
     screen.blit(surface, (400 - surface.get_width()/2, y))
 
-
+def abrir_camara():
+    theproc1=subprocess.Popen([sys.executable,"./ColorCapture.py"])
+    theproc1.communicate()
+    
 def main():
     pygame.init()
+
+    thread = threading.Thread(target=abrir_camara)
+    thread.start()
+    #time.sleep(3)
     pygame.display.set_caption("Tetris con PyGame")
     screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     run = True
     paused = False
     game_over = False
     # Create background.
-    background = pygame.Surface(screen.get_size())
+    background = pygame.Surfaqce(screen.get_size())
     bgcolor = (0, 0, 0)
     background.fill(bgcolor)
     # Draw the grid on top of the background.
@@ -483,4 +490,6 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
+    

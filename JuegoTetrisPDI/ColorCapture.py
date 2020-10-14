@@ -6,16 +6,17 @@
 #3 - Delimitar el rango del color que queremos caputrar -linea 15 a la 18                                                                   #
 #4 - Mostrar la imagen binarizada o en si desea mostrar solo el color real -Solo imagen binarizada linea 27, mostrar solo color linea 28    #
 #############################################################################################################################################
-from ArrrayColors import *
 import cv2
 import numpy as np                                                                                                  #libreria para el PDI
-from numpy.core.numeric import count_nonzero                                                                #Libreria para trabajo con matrices 
+import win32com.client as comctl
+
 
 class ColorCapture():
     x=int
     y=int
     captura = cv2.VideoCapture(0)                                                                         #Activa la WEBCAM
-    coordenates=[]    
+    coordenates=[]
+    wsh = comctl.Dispatch("WScript.Shell")
 
     #Definiendo los intervalos colores HSV que se desean capturar, estos se mandan por parametro
     #####################################################################################################
@@ -26,13 +27,13 @@ class ColorCapture():
         self.highColor2 =   color["hC2"]
         self.colors     =   color["color"]                                                                     
         self.option     =   option                                                                          
-        
+        self.bandera    =   True
         
     #Captura de video
     ####################################################################################################
     def cameraCapture(self):
         while True:                                                                                        #ciclo de ejecucion
-            ret, frame = self.captura.read()                                                             #Captura imagen en a1, ret recibe true(lectura de imagen) o false
+            ret, frame = self.captura.read()                                                               #Captura imagen en a1, ret recibe true(lectura de imagen) o false
             if ret == True:                                                                                #SI leyó la imagen entra al condicional
                 frameHSV    =   self.changeColorSpace(frame)
                 maskColor   =   self.colorcap(frameHSV)
@@ -42,9 +43,11 @@ class ColorCapture():
                 self.ShowImageType(self.option, frame, maskColor, maskColorIs)
             
             if cv2.waitKey(1) & 0xFF == ord('q'):                                                          #Mientras no se presione lq letra 'q' no se termina el programa
-                break                                                                                      #Para salir del while   
+
+                break                                                                                         #Para salir del while   
                 
         self.captura.release()                                                                           #Cierra la webcam
+        self.bandera = False
         cv2.destroyAllWindows()                                                                            #Destruye todas las ventanas
     
     #Opciones para mostrar pantalla
@@ -91,11 +94,11 @@ class ColorCapture():
                                                                                                                 # (0,255,255): lo que se dibuje lo hara en color amarillo. Este es el codigo BGR para el amarillo
                                                                                                                 # 3: el grosor de la linea que se va a dibujar
         return contours
-    
-    
+
     #A continuación lo trataremos de eliminar el ruido: los espacios donde se captura tambien amarillo
     ####################################################################################################
-    def eliminatingNoiseColor(self, contours, frame):                                                             
+    def eliminatingNoiseColor(self, contours, frame):
+        wsh = comctl.Dispatch("WScript.Shell")
         for spaces in contours:                                                                             #Vamos a explorar todos los contornos creados con un for
             area = cv2.contourArea(spaces)                                                                  #vamos a capturar el area de cada contorno
             if area>3000:                                                                                   #Si el area es mayor a 3000 entonces se va a dibujar el contorno, de lo contrario no se dibujará
@@ -119,24 +122,78 @@ class ColorCapture():
                 cv2.circle(frame, (x,y), 7, (0,255,0), 1)                                                   #Se dibuja la figura de circulo en el frame. se manda las coordenadas "x" y "y", con radio 7, dibujandolo de color verde, y grosor 1
                 cv2.putText(frame, '{},{}'.format(x,y), (x-50, y-80), 
                             font, 0.75,(0,255,0), 2, cv2.LINE_AA)                                           #Dibujaremos el texto en frame, se mostrara "x" y "y", en la ubicación (x+100, y+100), con la fuente que declaramos, el tamaño 0.75, color verde, grosor 1
-                self.x=x
-                self.y=y
-                self.coordenates.append([x,y])
-                                                                                                            #Guardamos las coordenadas en variables de clase para posteriormente utilizarla en control
-                
-                
-    
-    #capture1=ColorCapture(blue(), 3)                                                                       #Intanciamos la clase ColorCapture, mandandole como parametros el color que desea capturar, y la opcion para mostrar  pantalla:
-                                                                                                                #1- Solo muestra la pantalla de captura imagen
-                                                                                                                #2- Muestra la pantalla Captura imagen + pantalla de captura mascara binaria
-                                                                                                                #3- Muestra la pantalla captura imagen + pantalla de captura mas cara color
-                                                                                                                #4- Muestra las tres pantallas
-                                                                                                            #Colores a capturar
-                                                                                                                #yellow()
-                                                                                                                #blue()
-                                                                                                                #red()
-                                                                                                                #green()
-#if __name__ == "__main__":
-#   capture=ColorCapture(reed(), 4)
-#   capture.cameraCapture()
+                if 200 < x < 400 and 30 < y < 130:
+                    print("arriba")
+                    #cv2.putText(frame, "ARRIBA", (10,30), 0,1,(0,0,255),2 )
+                    wsh.SendKeys("{UP}")
+                    
+                if 200 < x < 400 and 350 < y < 450:
+                    print("abajo")
+                    wsh.SendKeys("{DOWN}")
 
+                if 0 < x < 200 and 150 < y < 300:
+                    print("izquierda")
+                    wsh.SendKeys("{LEFT}")
+
+                if 400 < x < 600 and 150 < y < 300:
+                    print("derecha")
+                    wsh.SendKeys("{RIGHT}")
+
+                self.coordenates.append([x,y])
+
+
+def yellow():
+    lC1 = np.array([25, 50, 0],
+                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
+    hC1 = np.array([30, 255, 255],
+                   np.uint8)  # Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo
+    lC2 = np.array([31, 50, 0],
+                   np.uint8)  # Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
+    hC2 = np.array([35, 255, 255],
+                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
+    yellow = {"lC1": lC1, "hC1": hC1, "lC2": lC2, "hC2": hC2, "color": "yellow"}
+    return yellow
+
+
+def blue():
+    lC1 = np.array([100, 100, 0],
+                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
+    hC1 = np.array([113, 255, 255],
+                   np.uint8)  # Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo
+    lC2 = np.array([114, 100, 0],
+                   np.uint8)  # Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
+    hC2 = np.array([127, 255, 255],
+                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
+    blue = {"lC1": lC1, "hC1": hC1, "lC2": lC2, "hC2": hC2, "color": "blue"}
+    return blue
+
+
+def red():
+    lC1 = np.array([0, 100, 20],
+                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
+    hC1 = np.array([8, 255, 255],
+                   np.uint8)  # Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo
+    lC2 = np.array([175, 100, 20],
+                   np.uint8)  # Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
+    hC2 = np.array([179, 255, 255],
+                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
+    red = {"lC1": lC1, "hC1": hC1, "lC2": lC2, "hC2": hC2, "color": "red"}
+    return red
+
+
+def green():
+    lC1 = np.array([55, 0, 0],
+                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
+    hC1 = np.array([62, 255, 255],
+                   np.uint8)  # Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo
+    lC2 = np.array([63, 0, 0],
+                   np.uint8)  # Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
+    hC2 = np.array([70, 255, 255],
+                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
+    green = {"lC1": lC1, "hC1": hC1, "lC2": lC2, "hC2": hC2, "color": "green"}
+    return green
+
+
+if __name__ == "__main__":
+     capt = ColorCapture(yellow(), 1)
+     capt.cameraCapture()
