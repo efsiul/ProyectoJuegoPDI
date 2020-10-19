@@ -1,10 +1,9 @@
 import time
 from random import randrange as rand
-import pygame, sys
 import sys, pygame
 import threading
 import subprocess
-
+import ColorCapture
 
 # The configuration
 config = {
@@ -47,6 +46,7 @@ tetris_shapes = [
 
     [[7, 7],
      [7, 7]]
+
 ]
 
 
@@ -93,9 +93,9 @@ def abrir_camara():
 class TetrisApp(object):
     def __init__(self):
         pygame.init()
-        
 
-        
+
+
         pygame.key.set_repeat(250, 25)
         self.width = config['cell_size'] * config['cols']
         self.height = config['cell_size'] * config['rows']

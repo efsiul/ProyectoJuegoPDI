@@ -9,6 +9,8 @@
 import cv2
 import numpy as np                                                                                                  #libreria para el PDI
 import win32com.client as comctl
+import ArrayColors
+from ArrayColors import *
 
 
 class ColorCapture():
@@ -21,13 +23,13 @@ class ColorCapture():
     #Definiendo los intervalos colores HSV que se desean capturar, estos se mandan por parametro
     #####################################################################################################
     def __init__(self, color,option):
-        self.lowColor1  =   color["lC1"]                                                                      
-        self.highColor1 =   color["hC1"]                                                                      
-        self.lowColor2  =   color["lC2"]                                                                       
+
+        self.lowColor1  =   color["lC1"]
+        self.highColor1 =   color["hC1"]
+        self.lowColor2  =   color["lC2"]
         self.highColor2 =   color["hC2"]
-        self.colors     =   color["color"]                                                                     
-        self.option     =   option                                                                          
-        self.bandera    =   True
+        self.colors     =   color["color"]
+        self.option     =   option
         
     #Captura de video
     ####################################################################################################
@@ -122,76 +124,28 @@ class ColorCapture():
                 cv2.circle(frame, (x,y), 7, (0,255,0), 1)                                                   #Se dibuja la figura de circulo en el frame. se manda las coordenadas "x" y "y", con radio 7, dibujandolo de color verde, y grosor 1
                 cv2.putText(frame, '{},{}'.format(x,y), (x-50, y-80), 
                             font, 0.75,(0,255,0), 2, cv2.LINE_AA)                                           #Dibujaremos el texto en frame, se mostrara "x" y "y", en la ubicación (x+100, y+100), con la fuente que declaramos, el tamaño 0.75, color verde, grosor 1
-                if 200 < x < 400 and 30 < y < 130:
+                if 200 < x < 400 and 30 < y < 150:
                     print("arriba")
-                    #cv2.putText(frame, "ARRIBA", (10,30), 0,1,(0,0,255),2 )
+                    cv2.putText(frame, "ARRIBA", (10,30), 0,1,(0,0,255),2 )
                     wsh.SendKeys("{UP}")
                     
-                if 200 < x < 400 and 350 < y < 450:
+                if 200 < x < 400 and 300 < y < 450:
                     print("abajo")
+                    cv2.putText(frame, "ABAJO", (10, 30),0, 1, (0, 0, 255), 2)
                     wsh.SendKeys("{DOWN}")
-
+                    
                 if 0 < x < 200 and 150 < y < 300:
                     print("izquierda")
+                    cv2.putText(frame, "IZQUIERDA", (10, 30),0, 1, (0, 0, 255), 2)
                     wsh.SendKeys("{LEFT}")
-
+                    
                 if 400 < x < 600 and 150 < y < 300:
+                    cv2.putText(frame, "DERECHA", (10,30), 0,1,(0,0,255),2 )
                     print("derecha")
                     wsh.SendKeys("{RIGHT}")
 
                 self.coordenates.append([x,y])
 
-
-def yellow():
-    lC1 = np.array([25, 50, 0],
-                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
-    hC1 = np.array([30, 255, 255],
-                   np.uint8)  # Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo
-    lC2 = np.array([31, 50, 0],
-                   np.uint8)  # Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
-    hC2 = np.array([35, 255, 255],
-                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
-    yellow = {"lC1": lC1, "hC1": hC1, "lC2": lC2, "hC2": hC2, "color": "yellow"}
-    return yellow
-
-
-def blue():
-    lC1 = np.array([100, 100, 0],
-                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
-    hC1 = np.array([113, 255, 255],
-                   np.uint8)  # Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo
-    lC2 = np.array([114, 100, 0],
-                   np.uint8)  # Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
-    hC2 = np.array([127, 255, 255],
-                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
-    blue = {"lC1": lC1, "hC1": hC1, "lC2": lC2, "hC2": hC2, "color": "blue"}
-    return blue
-
-
-def red():
-    lC1 = np.array([0, 100, 20],
-                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
-    hC1 = np.array([8, 255, 255],
-                   np.uint8)  # Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo
-    lC2 = np.array([175, 100, 20],
-                   np.uint8)  # Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
-    hC2 = np.array([179, 255, 255],
-                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
-    red = {"lC1": lC1, "hC1": hC1, "lC2": lC2, "hC2": hC2, "color": "red"}
-    return red
-
-
-def green():
-    lC1 = np.array([55, 0, 0],
-                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 15, 100 para saturación y 255 para brillo
-    hC1 = np.array([62, 255, 255],
-                   np.uint8)  # Definimos un array con los valores de matiz medio bajo para el amarillo 25, 255 para saturación y 255 para brillo
-    lC2 = np.array([63, 0, 0],
-                   np.uint8)  # Definimos un array con los valores de matiz medio alto para el amarillo 26, 100 para saturación y 255 para brillo
-    hC2 = np.array([70, 255, 255],
-                   np.uint8)  # Definimos un array con los valores de matiz mas bajo para el amarillo 35, 100 para saturación y 255 para brillo
-    green = {"lC1": lC1, "hC1": hC1, "lC2": lC2, "hC2": hC2, "color": "green"}
-    return green
 
 
 if __name__ == "__main__":
