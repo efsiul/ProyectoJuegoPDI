@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Module 'ProyectoJuegoPDI'" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a3e1863-4fc5-481f-a6bb-fb0d5f4e2676" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ProyectoJuegoPDI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.idea/Python-Games-master.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/ColorCapture.py" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoTetrisPDI/ColorCapture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoTetrisPDI/Tetris.py" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoTetrisPDI/Tetris.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JugoNofunciono/ArrayColors.py" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoTetrisPDI/ArrayColors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JugoNofunciono/ColorCapture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JugoNofunciono/Roboto-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JugoNofunciono/gyuw4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JugoNofunciono/tetris.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/T-Rex-Runner-made-in-Python-master/ColorCapture.py" beforeDir="false" afterPath="$PROJECT_DIR$/T-Rex-Runner-made-in-Python-master/ColorCapture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T-Rex-Runner-made-in-Python-master/T-RexRuner.py" beforeDir="false" afterPath="$PROJECT_DIR$/T-Rex-Runner-made-in-Python-master/T-RexRuner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.idea/Week-7-Python-master.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/ColorCapture.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-7-Python-master/ColorCapture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week-7-Python-master/wormy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week-7-Python-master/wormy.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="69586863-c745-4678-8bb7-f90f9154663e" />
+  <component name="ProjectId" id="1ixvgB906OSyr7ZDLd9wPRG78Ii" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/T-Rex-Runner-made-in-Python-master" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Luis Felipe Cadavid\Documents\ACADEMIA\UNIVERSIDAD DE ANTIOQUIA\SEMESTRES\2020-1\PROC. DIGITAL DE IMÁGENES\PROYECTO JUEGO\TRABAJO PDI\ProyectoJuegoPDI\T-Rex-Runner-made-in-Python-master" />
+      <recent name="C:\Users\Luis Felipe Cadavid\Documents\ACADEMIA\UNIVERSIDAD DE ANTIOQUIA\SEMESTRES\2020-1\PROC. DIGITAL DE IMÁGENES\PROYECTO JUEGO\TRABAJO PDI\ProyectoJuegoPDI\Week-7-Python-master" />
+      <recent name="C:\Users\Luis Felipe Cadavid\Documents\ACADEMIA\UNIVERSIDAD DE ANTIOQUIA\SEMESTRES\2020-1\PROC. DIGITAL DE IMÁGENES\PROYECTO JUEGO\TRABAJO PDI\ProyectoJuegoPDI\JuegoTetrisPDI" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Luis Felipe Cadavid\Documents\ACADEMIA\UNIVERSIDAD DE ANTIOQUIA\SEMESTRES\2020-1\PROC. DIGITAL DE IMÁGENES\PROYECTO JUEGO\TRABAJO PDI\ProyectoJuegoPDI\JuegoTetrisPDI" />
+      <recent name="C:\Users\Luis Felipe Cadavid\Documents\ACADEMIA\UNIVERSIDAD DE ANTIOQUIA\SEMESTRES\2020-1\PROC. DIGITAL DE IMÁGENES\PROYECTO JUEGO\TRABAJO PDI\ProyectoJuegoPDI" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Tetris (1)">
+    <configuration name="ColorCapture (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoJuegoPDI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/JuegoTetrisPDI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JuegoTetrisPDI/ColorCapture.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ColorCapture (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoJuegoPDI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week-7-Python-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week-7-Python-master/ColorCapture.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="T-RexRuner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoJuegoPDI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/T-Rex-Runner-made-in-Python-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/T-Rex-Runner-made-in-Python-master/T-RexRuner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tetris (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoJuegoPDI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/JuegoTetrisPDI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JuegoTetrisPDI/Tetris.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tetris" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ProyectoJuegoPDI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/JugoNofunciono" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wormy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoJuegoPDI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week-7-Python-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week-7-Python-master/wormy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.tetris" />
+      <item itemvalue="Python.wormy" />
+      <item itemvalue="Python.ColorCapture (1)" />
+      <item itemvalue="Python.Tetris (1)" />
+      <item itemvalue="Python.ColorCapture (2)" />
+      <item itemvalue="Python.T-RexRuner" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Tetris (1)" />
+        <item itemvalue="Python.T-RexRuner" />
+        <item itemvalue="Python.wormy" />
+        <item itemvalue="Python.ColorCapture (2)" />
+        <item itemvalue="Python.ColorCapture (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a3e1863-4fc5-481f-a6bb-fb0d5f4e2676" name="Default Changelist" comment="" />
+      <created>1602862172733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602862172733</updated>
+      <workItem from="1602862178095" duration="6867000" />
+      <workItem from="1602893685913" duration="325000" />
+      <workItem from="1603079353317" duration="2190000" />
+      <workItem from="1603091067182" duration="3323000" />
+      <workItem from="1603098336341" duration="1158000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1603091154843">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1603091154843" />
+    <state x="414" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603092692517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603092692517" />
+    <state x="695" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602862510639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="695" y="315" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602862510639" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602867707839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602867707839" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1603099837995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603099837995" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1603099837994">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603099837994" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1603099837994">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603099837994" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1603099837994">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603099837994" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1602893980166">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602893980166" />
+    <state x="807" y="433" key="VCS.ChangelistChooser" timestamp="1603092631778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603092631778" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Week-7-Python-master/ColorCapture.py</url>
+          <line>146</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProyectoJuegoPDI$T_RexRuner.coverage" NAME="T-RexRuner Coverage Results" MODIFIED="1603099541379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/T-Rex-Runner-made-in-Python-master" />
+    <SUITE FILE_PATH="coverage/ProyectoJuegoPDI$ColorCapture__2_.coverage" NAME="ColorCapture (2) Coverage Results" MODIFIED="1603091423689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week-7-Python-master" />
+    <SUITE FILE_PATH="coverage/ProyectoJuegoPDI$Tetris__1_.coverage" NAME="Tetris (1) Coverage Results" MODIFIED="1603099570187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JuegoTetrisPDI" />
+    <SUITE FILE_PATH="coverage/ProyectoJuegoPDI$ColorCapture__1_.coverage" NAME="ColorCapture (1) Coverage Results" MODIFIED="1602866986109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JuegoTetrisPDI" />
+    <SUITE FILE_PATH="coverage/ProyectoJuegoPDI$Tetris.coverage" NAME="Tetris Coverage Results" MODIFIED="1602864798093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JuegoTetrisPDI" />
+    <SUITE FILE_PATH="coverage/ProyectoJuegoPDI$ColorCapture.coverage" NAME="ColorCapture Coverage Results" MODIFIED="1602864809881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week-7-Python-master" />
+    <SUITE FILE_PATH="coverage/ProyectoJuegoPDI$wormy.coverage" NAME="wormy Coverage Results" MODIFIED="1603099469023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Week-7-Python-master" />
+    <SUITE FILE_PATH="coverage/ProyectoJuegoPDI$tetris.coverage" NAME="tetris Coverage Results" MODIFIED="1602866411355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JugoNofunciono" />
+  </component>
+</project>
