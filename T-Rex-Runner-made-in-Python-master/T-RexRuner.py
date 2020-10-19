@@ -13,12 +13,10 @@ def abrir_camara():
     theproc1=subprocess.Popen([sys.executable,"./ColorCapture.py"])
     theproc1.communicate()
 
-
 pygame.init()
+speed = 4
 thread = threading.Thread(target=abrir_camara)
 thread.start()
-speed = 4
-
 
 
 # extracting game items and characters form the resource.png image.
@@ -201,4 +199,3 @@ while not crashed:
             state = player_frame_4
     pygame.display.update()
     clock.tick(120)
-    

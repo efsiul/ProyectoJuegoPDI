@@ -13,6 +13,10 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="ColorCapture.*" />
+          <option value="JugoNofunciono.ColorCapture.*" />
+          <option value="JuegoTetrisPDI.Tetris.*" />
+          <option value="ArrayColors" />
+          <option value="JuegoTetrisPDI.ColorCapture.yellow" />
         </list>
       </option>
     </inspection_tool>
